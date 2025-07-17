@@ -85,5 +85,5 @@ double 8 bytes*/
 OPERATORS
 1 - ARITHEMATIC
 2 - RELATIONAL
-3 - LOGICAL
+3 - LOGICAL.
 */
