@@ -63,22 +63,85 @@ int main() {
     // cout << sum << endl;
 
     // sum of all odd numbers
-    int n = 5;
-    int sum = 0;
+    // int n = 5;
+    // int sum = 0;
 
-    // for(int i=0; i<=n; i++){
+    // int i = 1;
+    // while(i<=n){
     //     if(i%2!=0){
+    //         sum += i;
+    //     }
+    //     i++;
+    // }
+    // cout << sum << endl;
+
+    // prints 1 to N even nums
+
+    // int n = 6;
+    // for(int i = 1; i<=n; i++){
+    //     if(i%2==0){
+    //         cout << i << endl;
+    //     }
+    // }
+
+
+    // do-while loop
+    // int n = 5;
+    // int i = 1;
+    // do{
+    //     cout << i << " ";
+    //     i++;
+    // }while(i <= n);
+
+
+    // prime number
+    // for the optimisation, take it from 2 to √n (imp)
+    // i <= (n-1) less optimised approach
+    // i*i<=n is used so maximum value of i is √n
+    // int n = 12;
+    // bool isPrime = true;
+
+    // for(int i = 2; i*i<=n; i++){
+    //     if(n%i==0){
+    //         isPrime = false;
+    //         break;
+    //     }
+    // }
+
+    // if(isPrime){
+    //     cout << "Its a prime number";
+    // } else{
+    //     cout << "Its a non-prime number";
+
+    // }
+
+    // Nested loops
+
+    // int n = 5;
+    // for(int i = 1; i <= n; i++){
+    //     int m = 5;
+    //     for(int j = 1; j <= m; j++){
+    //         cout << "*" ;
+    //     }
+    //     cout << endl;
+    // }
+
+    // sum of nums from 1 to N divisible by 3
+    // int n = 10;
+    // int sum = 0;
+    // for(int i = 1; i <= n; i++){
+    //     if(i%3==0){
     //         sum += i;
     //     }
     // }
 
-    for(int i=1; i<=n; i+2){
-        sum = sum + i;
-    }
+    // Print factorial of a Number N
+   int n = 3;
+   int factorial = 1;
+   for(int i = 1; i <= n; i++){
+    factorial = factorial * i;
+   };
 
- 
-
-    cout << sum << endl;
-
+   cout << "factorial = " << factorial << endl;
     return 0;
 }
