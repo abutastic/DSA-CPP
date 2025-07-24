@@ -32,3 +32,4 @@ int main(){
     cout << "decimal is = " << binary(110) << endl;
     return 0;
 }
+
