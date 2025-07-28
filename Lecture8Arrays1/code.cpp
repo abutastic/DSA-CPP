@@ -22,6 +22,18 @@ int findTarget(int arr[],int sz, int target){
 }
 
 
+// 2 pointer approach, reverse an array
+void reverseArray(int arr[], int sz){
+    int start = 0;
+    int end = sz-1;
+    while(start < end){
+        swap(arr[start], arr[end]);
+        start++;
+        end--;
+    }
+}
+
+
 int main(){
     // int marks[] ={45, 89, 98, 6, 7};
     // int size = 5;
@@ -66,8 +78,21 @@ int main(){
     // cout << sizeof(marks) / sizeof(int) << endl;
 
     // Linear search (the easiest Algorithm)
-    int arr[] = {46, 89, 4, 3, 1};
-    int size = 5;
-    int target = 9;
-    cout << findTarget(arr, size, target) << endl;
+    // int arr[] = {46, 89, 4, 3, 1};
+    // int size = 5;
+    // int target = 9;
+    // cout << findTarget(arr, size, target) << endl;
+
+
+    // 2 pointer approach (v imp)
+    // reverse an array (same array)
+
+    // int arr[] = {1,2,3,4,5,6, 7};
+    // int sz = 7;
+    // reverseArray(arr, sz);
+    // for(int i=0; i<sz; i++){
+    //     cout << arr[i] << " ";
+    // }
+    return 0;
+
 }
