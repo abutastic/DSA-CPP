@@ -67,6 +67,26 @@ void swapMaxMin(int arr[], int size){
     swap(arr[maxIndex], arr[minIndex]);
 }
 
+void printUnique(int arr[], int size) {
+    cout << "Unique elements: ";
+    for (int i = 0; i < size; i++) {
+        bool isUnique = true;
+        
+        // Check if arr[i] appeared before the current index
+        for (int j = 0; j < i; j++) {
+            if (arr[i] == arr[j]) {
+                isUnique = false;
+                break;  // Duplicate found
+            }
+        }
+        
+        if (isUnique) {
+            cout << arr[i] << " ";
+        }
+    }
+    cout << endl;
+}
+
 int main(){
     // int marks[] ={45, 89, 98, 6, 7};
     // int size = 5;
@@ -128,14 +148,10 @@ int main(){
     // }
 
     // sum & product
-    int arr[] = {2, 3, 100, 1, -10};
-    int size = 5;
+    int arr[] = {2, 3, 100, 1, 1, 3, 2};
+    int size = 7;
 
-    swapMaxMin(arr, size);
-
-    for(int i=0; i<size; i++){
-        cout << arr[i] << " ";
-    }
+    printUnique(arr, size);
 
     return 0;
 
