@@ -33,6 +33,39 @@ void reverseArray(int arr[], int sz){
     }
 }
 
+// function to calculate sum and product of all numbers
+int sumProduct(int arr[], int size){
+    int sum = 0;
+    int product = 1;
+
+    for(int i=0; i<size; i++){
+        sum += arr[i];
+        product *= arr[i];
+    }
+
+    cout << "sum is: " << sum << endl;
+    cout << "product is: " << product << endl;
+
+    return 0;
+}
+
+// swap max and min of an array
+void swapMaxMin(int arr[], int size){
+    int maxIndex = 0;
+    int minIndex = 0;
+
+    for(int i=1; i<size; i++){
+        if(arr[i] > arr[maxIndex]){
+            maxIndex = i;
+        }
+        if(arr[i] < arr[minIndex]){
+            minIndex = i;
+        }
+    }
+    
+
+    swap(arr[maxIndex], arr[minIndex]);
+}
 
 int main(){
     // int marks[] ={45, 89, 98, 6, 7};
@@ -93,6 +126,20 @@ int main(){
     // for(int i=0; i<sz; i++){
     //     cout << arr[i] << " ";
     // }
+
+    // sum & product
+    int arr[] = {2, 3, 100, 1, -10};
+    int size = 5;
+
+    swapMaxMin(arr, size);
+
+    for(int i=0; i<size; i++){
+        cout << arr[i] << " ";
+    }
+
     return 0;
 
 }
+
+// to print all the unique values in an array
+// to print intersection of 2 arrays 
