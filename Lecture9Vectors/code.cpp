@@ -2,6 +2,15 @@
 #include <vector>
 using namespace std;
 
+//single number #136
+int singleNumber(vector<int>& nums){
+    int ans = 0;
+    for(int val : nums){
+        ans ^= val;
+    }
+    return ans;
+}
+
 int main(){
     // vector<int> vec(3,0); // [0, 0, 0]
     vector<int> vec;
