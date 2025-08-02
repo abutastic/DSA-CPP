@@ -24,7 +24,8 @@ using namespace std;
 
 int main(){
     int n = 5;
-    int arr[7] = {3, -4, 5, 4, -1, 7, -8};
+    // int arr[7] = {3, -4, 5, 4, -1, 7, -8};
+    int arr[7] = {1, 2, 3, 4, 5};
 
     // Brute force approach to print all possible subarray
     // for(int i=0; i<n; i++){
@@ -49,7 +50,9 @@ int main(){
     // cout << maxSum << endl;
 
     vector<int> nums = {3, -4, 5, 4, -1, 7, -8};
-    cout << maxSubArray(nums) << endl;
-   
+    // cout << maxSubArray(nums) << endl;
+
+    
+    
     return 0;
 }
