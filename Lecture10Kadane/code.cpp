@@ -22,6 +22,15 @@ using namespace std;
         return maxSum;
     }
 
+    // single number
+    int singleNumber(int arr[], int sz){
+        int ans = 0;
+        for(int i=0; i<sz; i++){
+            ans ^= arr[i]; 
+        }
+        return ans;
+    }
+
 int main(){
     int n = 5;
     // int arr[7] = {3, -4, 5, 4, -1, 7, -8};
@@ -52,6 +61,10 @@ int main(){
     vector<int> nums = {3, -4, 5, 4, -1, 7, -8};
     // cout << maxSubArray(nums) << endl;
 
+
+    int ar[] = {4, 1, 1, 2, 2, 4, 5};
+    int size = 7;
+    cout << singleNumber(ar, size) << endl;
     
     
     return 0;
